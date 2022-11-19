@@ -1,0 +1,4 @@
+db_host: "127.0.0.1"
+db_name: "azuriom"
+db_user: "azuriom"
+db_pass: "yourpassword"
