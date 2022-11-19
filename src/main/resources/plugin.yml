@@ -1,0 +1,9 @@
+name: AzuriomRank
+version: '${project.version}'
+main: fr.legabi.azuriomrank.AzuriomRank
+api-version: 1.19
+prefix: AzuriomRank
+depend: [ LuckPerms ]
+authors: [ le_gabi ]
+description: easy to link azuriom to your luckperm
+website: https://myplugins.dev
