@@ -1,6 +1,6 @@
-name: AzuriomRank
+name: MyAzuriomRank
 version: '${project.version}'
-main: fr.legabi.azuriomrank.AzuriomRank
+main: fr.legabi.myazuriomrank.AzuriomRank
 api-version: 1.19
 prefix: AzuriomRank
 depend: [ LuckPerms ]
