@@ -2,6 +2,7 @@ package fr.legabi.myazuriomrank;
 
 import fr.legabi.myazuriomrank.utils.ConnectionUtils;
 import net.luckperms.api.LuckPerms;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -14,11 +15,14 @@ import java.sql.Statement;
 public final class AzuriomRank extends JavaPlugin {
 
     Connection connection;
+    Metrics metrics;
 
     @Override
     public void onEnable() {
         // Plugin startup logic
         saveDefaultConfig();
+
+        metrics = new Metrics(this, 16896);
 
         System.out.println("Starting AzuriomRank");
 
