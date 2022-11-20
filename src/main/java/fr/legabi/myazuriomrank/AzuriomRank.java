@@ -58,12 +58,12 @@ public final class AzuriomRank extends JavaPlugin {
                                 if (resultSet.next()) {
                                     int id = resultSet.getInt("id");
                                     // update the player's role in the database if player role is different from the one in the database
-                                    sql = "SELECT * FROM `users` WHERE name = " + player.getName();
+                                    sql = "SELECT * FROM `users` WHERE name = '" + player.getName() + "'";
                                     resultSet = statement.executeQuery(sql);
                                     if (resultSet.next()) {
                                         int roleId = resultSet.getInt("role_id");
                                         if (roleId != id) {
-                                            sql = "UPDATE `users` SET role_id = " + id + " WHERE name = " + player.getName();
+                                            sql = "UPDATE `users` SET role_id = " + id + " WHERE name = '" + player.getName() + "'";
                                             statement.executeUpdate(sql);
                                         }
                                     }
